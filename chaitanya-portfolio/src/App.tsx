@@ -1,12 +1,15 @@
 import './App.css'
+import Navbar from './components/Navbar'
+import Hero from './sections/Hero'
 
 function App() {
 
   return (
-    <>
-      <div className='text-2xl text-center'>Hello</div>
-    </>
-  )
+    <div className='bg-gray-950 text-white'>
+      <Navbar />
+      <Hero />
+    </div>
+  );
 }
 
 export default App
