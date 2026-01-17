@@ -6,10 +6,18 @@ const Navbar = () => {
                     Sai<span className="text-indigo-400">.</span>
                 </span>
                 <ul className="hidden md:flex gap-8 text-sm text-gray-300">
-                    <li className="hover:text-white cursor-pointer">About</li>
-                    <li className="hover:text-white cursor-pointer">Skills</li>
-                    <li className="hover:text-white cursor-pointer">Projects</li>
-                    <li className="hover:text-white cursor-pointer">Contact</li>
+                    <li>
+                        <a href="#about" className="hover:text-white cursor-pointer">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills" className="hover:text-white cursor-pointer">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects" className="hover:text-white cursor-pointer">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" className="hover:text-white cursor-pointer">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </header>
