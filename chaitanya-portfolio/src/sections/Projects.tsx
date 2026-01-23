@@ -13,7 +13,7 @@ const Projects = () => {
                         return (
                             <div
                                 key={project.title}
-                                className="group p-6 rounded-xl border border-white/10 bg-gray-950 hover:border-indigo-400 transition"
+                                className="group p-6 rounded-xl border border-white/10 bg-gray-950 hover:border-indigo-400 hover:-translate-y-1 transition transform"
                             >
                                 <h3 className="text-xl font-semibold mb-2">
                                     {project.title}
