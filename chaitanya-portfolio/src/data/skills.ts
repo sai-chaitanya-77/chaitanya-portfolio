@@ -3,6 +3,7 @@ const skills: string[] = [
     "TypeScript",
     "React.js",
     "Next.js",
+    "Redux",
     "HTML",
     "CSS",
     "Tailwind CSS",
