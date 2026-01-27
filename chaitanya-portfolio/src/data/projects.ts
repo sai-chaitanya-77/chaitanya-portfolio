@@ -18,7 +18,7 @@ const projects: Project[] = [
         techStack: [
             "React", "Vite", "JavaScript", "Redux", "Axios", "React Router", "Vitest", "RTL"
         ],
-        githubRepo: "https://google.com"
+        githubRepo: "https://github.com/sai-chaitanya-77/React"
     },
     {
         title: "Full Stack Authentication App",
@@ -31,7 +31,7 @@ const projects: Project[] = [
         techStack: [
             "Next.js", "TypeScript", "Tailwind CSS", "MongoDB", "Mongoose", "Nodemailer"
         ],
-        githubRepo: ""
+        githubRepo: "https://github.com/sai-chaitanya-77/Next"
     }
 ];
 
