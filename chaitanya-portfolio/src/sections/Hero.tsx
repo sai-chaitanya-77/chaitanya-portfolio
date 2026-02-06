@@ -18,9 +18,12 @@ const Hero = () => {
                     I love building clean, user-friendly interfaces.
                 </p>
 
-                <button className="mt-8 px-6 py-3 border border-indigo-400 text-indigo-400 rounded hover:bg-indigo-400 hover:text-black transition">
+                <a
+                    href="#projects"
+                    className="inline-block mt-8 px-6 py-3 border border-indigo-400 text-indigo-400 rounded hover:bg-indigo-400 hover:text-black transition"
+                >
                     View My Work
-                </button>
+                </a>
             </div>
         </section>
     );
