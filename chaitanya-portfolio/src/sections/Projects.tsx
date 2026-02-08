@@ -1,5 +1,5 @@
 import projects from "../data/projects";
-
+import { motion } from 'framer-motion';
 
 const Projects = () => {
     return (
@@ -11,9 +11,11 @@ const Projects = () => {
                 <div className="grid gap-8 md:grid-cols-2">
                     {projects.map((project) => {
                         return (
-                            <div
+                            <motion.div
                                 key={project.title}
-                                className="group p-6 rounded-xl border border-white/10 bg-gray-950 hover:border-indigo-400 hover:-translate-y-1 transition transform"
+                                whileHover={{ y: -6 }}
+                                transition={{ duration: 0.2 }}
+                                className="group p-6 rounded-xl border border-white/10 bg-gray-950 hover:border-indigo-400"
                             >
                                 <h3 className="text-xl font-semibold mb-2">
                                     {project.title}
@@ -51,7 +53,7 @@ const Projects = () => {
                                         </a>
                                     )}
                                 </div>
-                            </div>
+                            </motion.div>
                         );
                     })}
                 </div>

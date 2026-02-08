@@ -1,7 +1,14 @@
+import { motion } from 'framer-motion';
+
 const Hero = () => {
     return (
         <section id='home' className="min-h-screen flex items-center">
-            <div className="max-w-6xl mx-auto px-4 animate-fade-in">
+            <motion.div
+                className="max-w-6xl mx-auto px-4"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+            >
                 <p className="text-indigo-400 text-sm mb-4">
                     Hi, my name is
                 </p>
@@ -24,7 +31,7 @@ const Hero = () => {
                 >
                     View My Work
                 </a>
-            </div>
+            </motion.div>
         </section>
     );
 }
