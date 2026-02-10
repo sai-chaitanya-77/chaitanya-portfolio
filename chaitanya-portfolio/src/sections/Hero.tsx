@@ -5,10 +5,11 @@ const Hero = () => {
     return (
         <section id='home' className="min-h-screen flex items-center">
             <div className="max-w-6xl mx-auto px-4 w-full">
-                <div className='grid md:grid-cols-2 gap-12 items-center'>
+                <div className='grid md:grid-cols-2 gap-8 items-center'>
 
                     {/* Intro text */}
                     <motion.div
+                        className='order-2 md:order-1'
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
@@ -42,12 +43,12 @@ const Hero = () => {
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className='flex justify-center md:justify-end'
+                        className='order-1 md:order-2 flex justify-center md:justify-end'
                     >
                         <img
                             src={profile}
                             alt="Sai Chaitanya"
-                            className='w-64 h-64 rounded-full object-cover border border-white/10'
+                            className='w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border border-white/10'
                         />
                     </motion.div>
                 </div>
