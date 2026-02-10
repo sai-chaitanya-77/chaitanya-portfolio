@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <section id='home' className="min-h-screen flex items-center">
             <div className="max-w-6xl mx-auto px-4 w-full">
-                <div className='grid md:grid-cols-2 gap-8 items-center'>
+                <div className='grid md:grid-cols-2 gap-12 items-center'>
 
                     {/* Intro text */}
                     <motion.div
