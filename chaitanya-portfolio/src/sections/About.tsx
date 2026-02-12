@@ -7,10 +7,13 @@ const About = () => {
                 </h2>
 
                 <p className="max-w-3xl text-gray-400 leading-relaxed">
-                    I’m a frontend developer passionate about building modern,
-                    performant, and accessible web applications. I enjoy working
-                    with React, TypeScript, and Tailwind CSS to create clean,
-                    user-friendly interfaces.
+                    With 3 years of industry experience,
+                    I build high-performant and accessible web applications
+                    used in real-world production environments.
+                    I’ve contributed to healthcare and eCommerce platforms,
+                    focusing on performance optimization, maintainable architecture,
+                    and exceptional user experience. My core tech stack includes React,
+                    TypeScript, JavaScript, and Tailwind CSS.
                 </p>
             </div>
         </section>

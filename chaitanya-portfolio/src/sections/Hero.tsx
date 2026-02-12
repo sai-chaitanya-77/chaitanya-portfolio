@@ -15,7 +15,7 @@ const Hero = () => {
                         transition={{ duration: 1 }}
                     >
                         <p className="text-indigo-400 text-sm mb-4">
-                            Hi, my name is
+                            Hi, I’m
                         </p>
                         <h1 className="text-4xl font-bold md:text-6xl leading-tight">
                             Sai Chaitanya
@@ -26,8 +26,7 @@ const Hero = () => {
                         </h2>
 
                         <p className="max-w-xl mt-6 text-gray-400">
-                            I'm a frontend developer specializing in React.js, Next.js, TypeScript, JavaScript and modern web technologies.
-                            I love building clean, user-friendly interfaces.
+                            I’m a software engineer specializing in frontend development, creating scalable solutions that combine performance, accessibility, and great user experience.
                         </p>
 
                         <a
