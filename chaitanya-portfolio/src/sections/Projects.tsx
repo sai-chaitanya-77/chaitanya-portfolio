@@ -42,7 +42,7 @@ const Projects = () => {
                                         );
                                     })}
                                 </div>
-                                <div className="flex">
+                                <div className="flex gap-4">
                                     {project.githubRepo && (
                                         <a
                                             href={project.githubRepo}
@@ -50,6 +50,15 @@ const Projects = () => {
                                             className="text-sm text-indigo-400 hover:underline"
                                         >
                                             Github →
+                                        </a>
+                                    )}
+                                    {project.demoLink && (
+                                        <a
+                                            href={project.demoLink}
+                                            target="_blank"
+                                            className="text-sm text-indigo-400 hover:underline"
+                                        >
+                                            Quick demo →
                                         </a>
                                     )}
                                 </div>

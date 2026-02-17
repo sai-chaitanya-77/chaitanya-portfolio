@@ -3,7 +3,8 @@ interface Project {
     description: string;
     highlights: string[];
     techStack: string[];
-    githubRepo?: string
+    githubRepo?: string;
+    demoLink?: string;
 };
 
 const projects: Project[] = [
@@ -18,7 +19,8 @@ const projects: Project[] = [
         techStack: [
             "React", "Vite", "JavaScript", "Redux", "Axios", "React Router", "Vitest", "RTL"
         ],
-        githubRepo: "https://github.com/sai-chaitanya-77/React"
+        githubRepo: "https://github.com/sai-chaitanya-77/React",
+        demoLink: "https://youtu.be/xL2b2jQUzXg"
     },
     {
         title: "Full Stack Authentication App",
@@ -31,7 +33,8 @@ const projects: Project[] = [
         techStack: [
             "Next.js", "TypeScript", "Tailwind CSS", "MongoDB", "Mongoose", "Nodemailer"
         ],
-        githubRepo: "https://github.com/sai-chaitanya-77/Next"
+        githubRepo: "https://github.com/sai-chaitanya-77/Next",
+        demoLink: "https://youtu.be/2iNUdF0evCA"
     }
 ];
 
