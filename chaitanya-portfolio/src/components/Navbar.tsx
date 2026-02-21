@@ -1,7 +1,32 @@
 import { useState } from "react";
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
+    const mobileMenuVariants = {
+        closed: {
+            height: 0,
+            opacity: 0,
+            transition: {
+                when: "afterChildren",
+                staggerChildren: 0.05,
+                staggerDirection: -1,
+            },
+        },
+        open: {
+            height: "auto",
+            opacity: 1,
+            transition: {
+                when: "beforeChildren",
+                staggerChildren: 0.08,
+            },
+        },
+    };
+
+    const mobileItemVariants = {
+        closed: { opacity: 0, y: -10 },
+        open: { opacity: 1, y: 0 },
+    };
 
     return (
         <header className="fixed top-0 left-0 w-full z-50 bg-gray-950/80 backdrop-blur border-b border-white/10">
@@ -41,28 +66,37 @@ const Navbar = () => {
             </nav>
 
             {/* Mobile Nav menu */}
-            {navbarOpen && (
-                <div className="md:hidden bg-gray-950 border-t border-white/10">
-                    <div className="flex flex-col px-4 py-4 gap-4 text-gray-300">
-                        {
-                            ["about", "skills", "projects", "contact"].map((item) => {
-                                return (
-                                    <a
-                                        key={item}
-                                        href={`#${item}`}
-                                        className="hover:text-white"
-                                        onClick={() => {
-                                            setNavbarOpen(false)
-                                        }}
-                                    >
-                                        {item.charAt(0).toUpperCase() + item.slice(1)}
-                                    </a>
-                                );
-                            })
-                        }
-                    </div>
-                </div>
-            )}
+            <AnimatePresence>
+                {navbarOpen && (
+                    <motion.div
+                        initial="closed"
+                        animate="open"
+                        exit="closed"
+                        variants={mobileMenuVariants}
+                        className="md:hidden bg-gray-950 border-t border-white/10"
+                    >
+                        <div className="flex flex-col px-4 py-4 gap-4 text-gray-300">
+                            {
+                                ["about", "skills", "projects", "contact"].map((item) => {
+                                    return (
+                                        <motion.a
+                                            key={item}
+                                            href={`#${item}`}
+                                            variants={mobileItemVariants}
+                                            className="text-gray-300 hover:text-white transition"
+                                            onClick={() => {
+                                                setNavbarOpen(false)
+                                            }}
+                                        >
+                                            {item.charAt(0).toUpperCase() + item.slice(1)}
+                                        </motion.a>
+                                    );
+                                })
+                            }
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </header>
     );
 };
