@@ -71,7 +71,6 @@ const Navbar = () => {
                     <motion.div
                         initial="closed"
                         animate="open"
-                        exit="closed"
                         variants={mobileMenuVariants}
                         className="md:hidden bg-gray-950 border-t border-white/10"
                     >
