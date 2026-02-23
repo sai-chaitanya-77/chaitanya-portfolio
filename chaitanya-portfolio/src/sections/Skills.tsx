@@ -2,7 +2,7 @@ import skills from "../data/skills";
 
 const Skills = () => {
     return (
-        <section id="skills" className="py-24">
+        <section id="skills" className="py-24 scroll-mt-24">
             <div className="max-w-6xl mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-bold mb-8">
                     Skills

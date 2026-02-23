@@ -1,6 +1,6 @@
 const Contact = () => {
     return (
-        <section id="contact" className="py-24">
+        <section id="contact" className="py-24 scroll-mt-24">
             <div className="max-w-6xl mx-auto px-4 text-center animate-fade-in">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
                     Get In Touch
